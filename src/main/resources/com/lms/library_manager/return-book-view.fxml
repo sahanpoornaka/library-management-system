@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lms.library_manager.ReturnBookController">
+   <HBox alignment="CENTER" layoutX="10.0" layoutY="54.0">
+      <VBox.margin>
+         <Insets top="10.0" />
+      </VBox.margin>
+      <Label text="RETURN BOOK MENU">
+         <font>
+            <Font name="Courier New Bold Italic" size="28.0" />
+         </font>
+      </Label>
+   </HBox>
+   <TextField fx:id="issueIdText" promptText="Issue Id">
+      <VBox.margin>
+         <Insets left="30.0" right="30.0" top="30.0" />
+      </VBox.margin>
+   </TextField>
+   <DatePicker fx:id="returnDatePicker" promptText="Return Date">
+      <VBox.margin>
+         <Insets left="30.0" top="20.0" />
+      </VBox.margin>
+   </DatePicker>
+   <TextField fx:id="fineText" layoutX="40.0" layoutY="85.0" promptText="Fine To Be Paid">
+      <VBox.margin>
+         <Insets left="30.0" right="30.0" top="10.0" />
+      </VBox.margin>
+   </TextField>
+   <HBox alignment="CENTER" layoutX="10.0" layoutY="54.0" spacing="30.0">
+      <VBox.margin>
+         <Insets top="30.0" />
+      </VBox.margin>
+      <Button alignment="CENTER" contentDisplay="CENTER" minWidth="120.0" mnemonicParsing="false" onAction="#onReturnBookBtnClick" text="Return Book" textAlignment="CENTER" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="133.0" layoutY="10.0" minWidth="120.0" mnemonicParsing="false" onAction="#onCancelBtnClick" text="Cancel" textAlignment="CENTER" />
+   </HBox>
+</VBox>
